@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+This file is part of Finger Battle.
+
+Finger Battle is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Finger Battle is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Finger Battle.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+    <head>
+        <title>Finger Battle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis:600,800" rel="stylesheet">
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--LAYOUT-->
+        <div id="text-layer1"></div>
+        <div id="text-layer2"></div>
+        <div id="container">
+            <span id="leftBox"></span>
+            <span id="rightBox"></span>
+        </div>
+        <!--HTML DATA-->
+        <div id="hidden">
+            <div id="html-menu">
+                <div class="text-xl center bold">Finger Battle</div>
+                <div class="text-m center">Hold <span class="current-left bold underline">A</span> and <span class="current-right bold underline">L</span> to start</div>
+                <div class="show-tutorial text-m center"><span class="underline">How to play</span></div>
+                <div class="show-settings text-m center"><span class="underline">Settings</span></div>
+                <div class="show-credits text-m center"><span class="underline">Credits & Source</span></div>
+            </div>
+            <div id="html-tutorial">
+                <div class="text-l center">How to play</div>
+                <div class="text-s">
+                    This game is designed for two players. Both players should choose different sides of the screen (which is red or blue).
+                    When a player presses their designated key, (which is <span class="bold">A</span> or <span class="bold">L</span> by default,) their side extends and pushes the other's side away.
+                    The objective is to push the other player's side off-screen, <span class="bold">so press your key as fast as you can!</span><br />
+                    Both players should only use one finger for pressing thier key during the entire round (unless they both agree to do otherwise).</div>
+                <div class="show-menu text-m center"><span class="underline">Back to Menu</span></div>
+            </div>
+            <div id="html-settings">
+                <div class="text-l center">Settings</div>
+                <table class="text-s" style="margin-left:5vh">
+                    <tr class="set-size" tabindex="1">
+                        <td>Stage size:</td>
+                        <td class="current-size"></td>
+                    </tr>
+                    <tr class="set-left" tabindex="1">
+                        <td>Left key:</td>
+                        <td class="current-left"></td>
+                    </tr>
+                    <tr class="set-right" tabindex="1">
+                        <td>Right key:</td>
+                        <td class="current-right"></td>
+                    </tr>
+                    <tr class="set-controls" tabindex="1">
+                        <td>Use mouse instead:</td>
+                        <td class="current-controls"></td>
+                    </tr>
+                    <tr class="set-volume" tabindex="1">
+                        <td>Mute sounds:</td>
+                        <td class="current-volume"></td>
+                    </tr>
+                </table>
+                <div class="settings-error text-s center bold"></div>
+                <span class="set-defaults underline text-m center">Reset to defaults</span>
+                <span class="show-menu underline text-m center">Back to Menu</span>
+            </div>
+            <div id="html-credits">
+                <div class="text-l center"><span class="translucent underline"><</span> Credits 1/2 <span class="show-credits2 underline">></span></div>
+                <div class="text-s">Programmed by Justus Tumacder</div>
+                <div class="text-s">Based on <a target="_blank" href="https://itunes.apple.com/us/app/finger-battle/id424405825" class="underline">an iPhone app</a> by Rafael Rozendaal & Dirk van Oosterbosch</div>
+                <div style="float:right">
+                    <div class="text-s"><a target="_blank" href="https://github.com/JustusFT/finger-battle" class="underline">Github repository</a></div>
+                    <div class="text-s"><a target="_blank" href="http://justusft.github.io" class="underline">Github page</a></div>
+                </div>
+                <div class="text-m center" style="clear:both"><a target="_blank" href="https://twitter.com/JustusFT" class="underline"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></div>
+                <div class="show-menu text-m center" style="clear: both;"><span class="underline">Back to Menu</span></div>
+            </div>
+            <div id="html-credits2">
+                <div class="text-l center"><span class="show-credits underline"><</span> Credits 2/2 <span class="translucent underline">></span></div>
+                <div class="text-m center">Sounds used:</div>
+                <table class="text-s" style="margin-left:-5vh">
+                    <tr>
+                        <td>Tap sound:</td>
+                        <td><a target="_blank" href="https://www.freesound.org/people/Ethraiel/sounds/351569/" class="underline">source</a></td>
+                        <td><span class="play-taps underline">listen</span></td>
+                    </tr>
+                    <tr>
+                        <td>Countdown tick:</td>
+                        <td><a target="_blank" href="https://www.freesound.org/people/coobek/sounds/185608/" class="underline">source</a></td>
+                        <td><span class="play-tick underline">listen</span></td>
+                    </tr>
+                    <tr>
+                        <td>Game start:</td>
+                        <td><a target="_blank" href="https://www.freesound.org/people/Benboncan/sounds/66952/" class="underline">source</a></td>
+                        <td><span class="play-gameStart underline">listen</span></td>
+                    </tr>
+                    <tr>
+                        <td>Game end:</td>
+                        <td><a target="_blank" href="https://www.freesound.org/people/Benboncan/sounds/66951/" class="underline">source</a></td>
+                        <td><span class="play-gameOver underline">listen</span></td>
+                    </tr>
+                </table>
+                <div class="show-menu text-m center"><span class="underline">Back to Menu</span></div>
+            </div>
+        </div>
+    </body>
+</html>

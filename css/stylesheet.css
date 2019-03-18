@@ -1,0 +1,102 @@
+/*
+This file is part of Finger Battle.
+
+Finger Battle is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Finger Battle is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Finger Battle.  If not, see <http://www.gnu.org/licenses/>.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow:hidden;
+    font-size: 0px;
+    font-family: 'Dosis', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+#hidden {
+    display: none;
+}
+#container {
+    width: 200vw;
+    position: relative;
+    left: -50vw;
+}
+#leftBox, #rightBox {
+    width: 100vw;
+    height: 100vh;
+    display:inline-block;
+}
+#text-layer1, #text-layer2 {
+    color: #FFF;
+    font-size: 15vh;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 5vw;
+}
+#text-layer1 {
+    z-index: 9001;
+    opacity: 0.25;
+    color:rgba(0,0,0,0);
+}
+#text-layer2 {
+    z-index: 9002;
+    opacity: 1.0;
+}
+.text-xl {
+    font-size: 15vh;
+}
+.text-l {
+    font-size: 10vh;
+}
+.text-m {
+    font-size: 7.5vh;
+}
+.text-s {
+    font-size: 5vh;
+}
+.center {
+    text-align: center;
+}
+.underline {
+    text-decoration: underline;
+    position:relative;
+}
+.bold {
+    font-weight: 800;
+}
+.translucent {
+    opacity: 0.5;
+}
+a, a:visited {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+tr {
+    outline: none;
+}
+td:nth-child(1) {
+    text-align: right;
+}
+td {
+    padding-left: 1.25vh;
+    padding-right: 1.25vh;
+}
