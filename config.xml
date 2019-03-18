@@ -7,15 +7,15 @@
         xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>NOMBRE</name>
     <description>
-        DESCRIPCIÓN
+        Battle
     </description>
     <author email="EMAIL" href="UN ENLACE">
-        DATOS PERSONALES
+        Moción
     </author>
     <content src="index.html" />
     <access origin="*" />
 
-    <icon src="RUTA"/>
+    <icon src="favicon.ico"/>
   
     <preference name="Fullscreen" value="false" />
     <preference name="phonegap-version" value="cli-6.4.0" /> <!-- Phonegap Build only -->
